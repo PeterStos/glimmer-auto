@@ -466,3 +466,4 @@ C:\Users\peter\source\repos\GlimmerAuto\obj\Debug\netcoreapp3.1\Razor\Areas\Iden
 C:\Users\peter\source\repos\GlimmerAuto\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\peter\source\repos\GlimmerAuto\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 C:\Users\peter\source\repos\GlimmerAuto\obj\Debug\netcoreapp3.1\Razor\Pages\ServiceTypes\Index.cshtml.g.cs
+C:\Users\peter\source\repos\GlimmerAuto\obj\Debug\netcoreapp3.1\Razor\Pages\ServiceTypes\Create.cshtml.g.cs

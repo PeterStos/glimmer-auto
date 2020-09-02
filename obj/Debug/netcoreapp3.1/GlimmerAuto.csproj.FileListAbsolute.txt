@@ -489,3 +489,6 @@ C:\Users\peter\source\repos\GlimmerAuto\obj\Debug\netcoreapp3.1\GlimmerAuto.MvcA
 C:\Users\peter\source\repos\GlimmerAuto\obj\Debug\netcoreapp3.1\GlimmerAuto.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\peter\source\repos\GlimmerAuto\obj\Debug\netcoreapp3.1\Razor\Pages\ServiceTypes\Edit.cshtml.g.cs
 C:\Users\peter\source\repos\GlimmerAuto\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_EditAndBackButton.cshtml.g.cs
+C:\Users\peter\source\repos\GlimmerAuto\obj\Debug\netcoreapp3.1\Razor\Pages\ServiceTypes\Details.cshtml.g.cs
+C:\Users\peter\source\repos\GlimmerAuto\obj\Debug\netcoreapp3.1\Razor\Pages\ServiceTypes\Delete.cshtml.g.cs
+C:\Users\peter\source\repos\GlimmerAuto\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_DeleteAndBackToListButton.cshtml.g.cs

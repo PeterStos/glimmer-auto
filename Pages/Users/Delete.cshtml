@@ -1,0 +1,97 @@
+﻿@page
+@model GlimmerAuto.Pages.Users.DeleteModel
+
+<h2 class="text-info pt-2 pb-3">Delete customer</h2>
+
+<form method="post">
+    <div class="row backgroundWhite border">
+        <div class="col-md-8">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input asp-for="ApplicationUser.Id" hidden />
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-4">
+                        <label asp-for="ApplicationUser.Name"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="ApplicationUser.Name" disabled class="form-control" />
+                    </div>
+                    <span asp-validation-for="ApplicationUser.Name" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-4">
+                        <label asp-for="ApplicationUser.Email"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="ApplicationUser.Email" disabled class="form-control" />
+                    </div>
+                    <span asp-validation-for="ApplicationUser.Email" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-4">
+                        <label asp-for="ApplicationUser.PhoneNumber">Phone Number</label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="ApplicationUser.PhoneNumber" disabled class="form-control" />
+                    </div>
+                    <span asp-validation-for="ApplicationUser.PhoneNumber" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-4">
+                        <label asp-for="ApplicationUser.Address"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="ApplicationUser.Address" disabled class="form-control" />
+                    </div>
+                    <span asp-validation-for="ApplicationUser.Address" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-4">
+                        <label asp-for="ApplicationUser.City"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="ApplicationUser.City" disabled class="form-control" />
+                    </div>
+                    <span asp-validation-for="ApplicationUser.City" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-4">
+                        <label asp-for="ApplicationUser.PostalCode"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="ApplicationUser.PostalCode" disabled class="form-control" />
+                    </div>
+                    <span asp-validation-for="ApplicationUser.PostalCode" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-4">
+                    </div>
+                    <div class="col-4">
+                        <button type="submit" class="btn btn-danger form-control">Delete</button>
+                    </div>
+                    <div class="col-4">
+                        <a asp-page="Index" class="btn btn-success form-control">Back to List</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

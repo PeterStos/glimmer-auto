@@ -84,7 +84,7 @@ namespace GlimmerAuto.Pages.Users
             };
 
             UsersListVM.ApplicationUserList = UsersListVM.ApplicationUserList.OrderBy(p => p.Email)
-                .Skip((productPage - 1) * SD.PaginationUsersPageSize)  // 
+                .Skip((productPage - 1) * SD.PaginationUsersPageSize)
                 .Take(SD.PaginationUsersPageSize).ToList();
 
             return Page();  

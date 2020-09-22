@@ -41,6 +41,7 @@ namespace GlimmerAuto
             // Modified to add IdentityRole
             services.AddIdentity<IdentityUser, IdentityRole>()
                 .AddDefaultTokenProviders()
+                .AddDefaultUI() // Add because [Authorize(Roles = SD.AdminEndUser)] was not working
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddRazorPages().AddRazorRuntimeCompilation();
         }

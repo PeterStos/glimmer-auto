@@ -8,9 +8,12 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using GlimmerAuto.Data;
 using GlimmerAuto.Models;
+using Microsoft.AspNetCore.Authorization;
+using GlimmerAuto.Utility;
 
 namespace GlimmerAuto
 {
+    [Authorize(Roles = SD.AdminEndUser)]
     public class EditModel : PageModel
     {
         private readonly ApplicationDbContext _db;

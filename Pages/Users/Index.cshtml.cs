@@ -7,12 +7,14 @@ using GlimmerAuto.Data;
 using GlimmerAuto.Models;
 using GlimmerAuto.Models.ViewModel;
 using GlimmerAuto.Utility;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 
 namespace GlimmerAuto.Pages.Users
 {
+    [Authorize(Roles = SD.AdminEndUser)]
     public class IndexModel : PageModel
     {
         private readonly ApplicationDbContext _db;

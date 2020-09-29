@@ -13,6 +13,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity.UI.Services;
+using Microsoft.AspNetCore.Mvc;
+using GlimmerAuto.Email;
+
 
 namespace GlimmerAuto
 {
@@ -43,7 +47,12 @@ namespace GlimmerAuto
                 .AddDefaultTokenProviders()
                 .AddDefaultUI() // Add because [Authorize(Roles = SD.AdminEndUser)] was not working
                 .AddEntityFrameworkStores<ApplicationDbContext>();
-            services.AddRazorPages().AddRazorRuntimeCompilation();
+            // Add to the next 2 lines to use SendGrid
+            services.AddSingleton<IEmailSender, EmailSender>();
+            services.Configure<EmailOptions>(Configuration);
+
+            //services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0); // Added to test based on the course
+            services.AddRazorPages().AddRazorRuntimeCompilation(); // This line is different from the course
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

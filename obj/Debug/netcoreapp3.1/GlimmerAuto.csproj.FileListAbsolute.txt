@@ -485,8 +485,6 @@ C:\Users\peter\source\repos\GlimmerAuto\bin\Debug\netcoreapp3.1\runtimes\win-arm
 C:\Users\peter\source\repos\GlimmerAuto\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\peter\source\repos\GlimmerAuto\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\peter\source\repos\GlimmerAuto\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
-C:\Users\peter\source\repos\GlimmerAuto\obj\Debug\netcoreapp3.1\GlimmerAuto.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\peter\source\repos\GlimmerAuto\obj\Debug\netcoreapp3.1\GlimmerAuto.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\peter\source\repos\GlimmerAuto\obj\Debug\netcoreapp3.1\Razor\Pages\ServiceTypes\Edit.cshtml.g.cs
 C:\Users\peter\source\repos\GlimmerAuto\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_EditAndBackButton.cshtml.g.cs
 C:\Users\peter\source\repos\GlimmerAuto\obj\Debug\netcoreapp3.1\Razor\Pages\ServiceTypes\Details.cshtml.g.cs
@@ -495,3 +493,5 @@ C:\Users\peter\source\repos\GlimmerAuto\obj\Debug\netcoreapp3.1\Razor\Pages\Shar
 C:\Users\peter\source\repos\GlimmerAuto\obj\Debug\netcoreapp3.1\Razor\Pages\Users\Index.cshtml.g.cs
 C:\Users\peter\source\repos\GlimmerAuto\obj\Debug\netcoreapp3.1\Razor\Pages\Users\Edit.cshtml.g.cs
 C:\Users\peter\source\repos\GlimmerAuto\obj\Debug\netcoreapp3.1\Razor\Pages\Users\Delete.cshtml.g.cs
+C:\Users\peter\source\repos\GlimmerAuto\bin\Debug\netcoreapp3.1\SendGrid.dll
+C:\Users\peter\source\repos\GlimmerAuto\bin\Debug\netcoreapp3.1\StarkbankEcdsa.dll

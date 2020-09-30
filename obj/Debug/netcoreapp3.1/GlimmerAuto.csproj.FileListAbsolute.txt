@@ -495,3 +495,6 @@ C:\Users\peter\source\repos\GlimmerAuto\obj\Debug\netcoreapp3.1\Razor\Pages\User
 C:\Users\peter\source\repos\GlimmerAuto\obj\Debug\netcoreapp3.1\Razor\Pages\Users\Delete.cshtml.g.cs
 C:\Users\peter\source\repos\GlimmerAuto\bin\Debug\netcoreapp3.1\SendGrid.dll
 C:\Users\peter\source\repos\GlimmerAuto\bin\Debug\netcoreapp3.1\StarkbankEcdsa.dll
+C:\Users\peter\source\repos\GlimmerAuto\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.Facebook.dll
+C:\Users\peter\source\repos\GlimmerAuto\obj\Debug\netcoreapp3.1\GlimmerAuto.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\peter\source\repos\GlimmerAuto\obj\Debug\netcoreapp3.1\GlimmerAuto.MvcApplicationPartsAssemblyInfo.cache

@@ -49,6 +49,13 @@ namespace GlimmerAuto
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             // Add to the next 2 lines to use SendGrid
             services.AddSingleton<IEmailSender, EmailSender>();
+
+            services.AddAuthentication().AddFacebook(fb =>
+            {
+                fb.AppId = "377125243692282";
+                fb.AppSecret = "e4ed61cf96ff2e9273728c260bc2a50c";
+            });
+
             services.Configure<EmailOptions>(Configuration);
 
             //services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0); // Added to test based on the course

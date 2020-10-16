@@ -16,9 +16,13 @@ namespace GlimmerAuto.Pages.Cars
     {
         private readonly ApplicationDbContext _db;
 
-        [BindProperty]
+        [BindProperty] 
         public CarAndCustomerViewModel CarAndCustomerViewModel { get; set; }
-        public ApplicationUser UserObj { get; private set; }
+
+        [TempData]
+        public string StatusMessage { get; set; }
+
+        //public ApplicationUser UserObj { get; private set; }
 
         public IndexModel(ApplicationDbContext db)
         {

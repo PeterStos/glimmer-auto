@@ -17,7 +17,7 @@ namespace GlimmerAuto.Models
         public string Details { get; set; }
 
         [Required]
-        [DisplayFormat(DataFormatString ="0:MMM dd yyyy")]
+        [DisplayFormat(DataFormatString ="{0:MMM dd yyyy}")]
         public DateTime DateAdded { get; set; }
         public int CarId { get; set; }
 

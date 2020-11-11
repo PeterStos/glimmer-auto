@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using GlimmerAuto.Data;
 using GlimmerAuto.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace GlimmerAuto.Pages.Cars
 {
+    [Authorize]
     public class DeleteModel : PageModel
     {
         private readonly ApplicationDbContext _db;

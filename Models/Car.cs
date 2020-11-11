@@ -19,7 +19,7 @@ namespace GlimmerAuto.Models
         public string Model { get; set; }
         public string Style { get; set; }
         [Required]
-        public double Year { get; set; }
+        public int Year { get; set; }
         [Required]
         public double Miles { get; set; }
         [Required]

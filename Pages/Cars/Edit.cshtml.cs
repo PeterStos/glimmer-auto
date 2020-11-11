@@ -8,9 +8,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using GlimmerAuto.Data;
 using GlimmerAuto.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace GlimmerAuto.Pages.Cars
 {
+    [Authorize]
     public class EditModel : PageModel
     {
         private readonly ApplicationDbContext _db;

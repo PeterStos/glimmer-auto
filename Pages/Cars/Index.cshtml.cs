@@ -9,15 +9,17 @@ using GlimmerAuto.Models.ViewModel;
 using System.Security.Claims;
 using Microsoft.EntityFrameworkCore;
 using GlimmerAuto.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace GlimmerAuto.Pages.Cars
 {
+    [Authorize]
     public class IndexModel : PageModel
     {
         private readonly ApplicationDbContext _db;
 
         [BindProperty] 
-        public CarAndCustomerViewModel CarAndCustomerViewModel { get; set; }
+        public CarAndCustomerViewModel CarAndCustomerVM { get; set; }
 
         [TempData]
         public string StatusMessage { get; set; }
@@ -38,7 +40,7 @@ namespace GlimmerAuto.Pages.Cars
                 userId = claim.Value;
             }
 
-            CarAndCustomerViewModel = new CarAndCustomerViewModel()
+            CarAndCustomerVM = new CarAndCustomerViewModel()
             {
                 Cars = await _db.Car.Where(c => c.UserId == userId).ToListAsync(),
                 UserObj = await _db.ApplicationUser.FirstOrDefaultAsync(u => u.Id == userId)
